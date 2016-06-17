@@ -1,0 +1,11 @@
+{% assign pub=include.pub %}
+
+<span class="post-journals">
+    {% case pub.type %}
+    {% when 'journal' %}
+    {{ pub.journal }}
+    {% if pub.conference %}({{ pub.conference }}){% endif %}
+    {% when 'conference' %}
+    {{ pub.conference }}
+    {% endcase %}
+</span>

@@ -1,0 +1,73 @@
+* {
+    font-family: $font;
+    color: $color-1;
+}
+
+body {
+    background: $color-bg-3; /* Old browsers */
+    background: -moz-linear-gradient(top, $color-bg-1 20%, $color-bg-3 60%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $color-bg-1 20%, $color-bg-3 60%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $color-bg-1 20%, $color-bg-3 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-bg-1', endColorstr='$color-bg-3', GradientType=0 ); /* IE6-9 */
+    background-attachment: fixed;
+
+    .main-page {
+        margin: $space-small;
+    }
+}
+
+.section-title {
+    padding: $space-tiny;
+    margin: $space-small 0 $space-tiny 0;
+    border-top: 2px solid $color-3;
+    border-bottom: 1px dotted $color-3;
+    h1 {
+        margin: 0;
+        display: inline-block;
+        padding-left: $space-tiny;
+        font-weight: 700;
+        font-size: $font-size-2p0;
+    }
+    h2 {
+        margin-top: $space-tiny * 2;
+        float: right;
+        display: inline-block;
+        padding-right: $space-tiny;
+        font-size: $font-size-1p2;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $color-0;
+}
+
+a:hover {
+    color: $color-1-link;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+.icon {
+    > svg {
+        display: inline-block;
+        width: auto;
+        height: 16px;
+        vertical-align: middle;
+        path {
+            fill: grey;
+        }
+    }
+}
+
+.icon-mid {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.flex-video {
+    border: 1px solid black;
+}

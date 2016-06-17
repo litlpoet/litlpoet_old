@@ -1,0 +1,22 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+{% assign pubs = site.publications | sort: 'date' | reverse %}
+
+{% include separator.html name="Journal Papers" %}
+{% for pub in pubs %}
+{% if pub.type == 'journal' %}
+{% include list-one-pub.html %}
+{% endif %}
+{% endfor %}
+
+{% include separator.html name="Conference Papers" %}
+{% for pub in pubs %}
+{% if pub.type == 'conference' %}
+{% include list-one-pub.html %}
+{% endif %}
+{% endfor %}
+
+{% include separator.html name="Domestic Publications (Korean)" %}

@@ -1,0 +1,11 @@
+
+<article class="post-article">
+    <div class="post-content text-justify">
+        {% if page.teaser %}
+        <div class="post-teaser">
+            <img src="/images/post/{{ page.teaser }}">
+        </div>
+        {% endif %}
+        {{ content }}
+    </div>
+</article>

@@ -1,0 +1,32 @@
+{% if include.dir == "prev" %}
+{% assign text-align = "text-left" %}
+{% assign text-dir = "PREVIOUS ⇐" %}
+{% else %}
+{% assign text-align = "text-right" %}
+{% assign text-dir = "⇒ NEXT" %}
+{% endif %}
+{% assign item = include.item %}
+
+<div class="large-6 columns {{ text-align }}">
+    {% if include.item %}
+    <div class="row pg-wrap">
+        {% if include.dir == "prev" %}
+        <div class="pg-img" style="background-image:url({{item.thumb | prepend:item.url}});"></div>
+        <div class="pg-info">
+            <a href="{{ item.url }}">
+                <h6>{{ text-dir }}</h6>
+                <h3>{{ item.title }}</h3>
+            </a>
+        </div>
+        {% else %}
+        <div class="pg-info">
+            <a href="{{ item.url }}">
+                <h6>{{ text-dir }}</h6>
+                <h3>{{ item.title }}</h3>
+            </a>
+        </div>
+        <div class="pg-img" style="background-image:url({{item.thumb | prepend:item.url}});"></div>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>

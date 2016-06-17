@@ -1,0 +1,14 @@
+<div class="top-bar" id="main-menu">
+    <div class="top-bar-left">
+        <div class="menu-text"><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
+    </div>
+    <div class="top-bar-right">
+        <ul class="menu">
+            {% for p in site.pages %}
+            {% if p.title %}
+            <li><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<header class="debug">
+    {% include header-topbar.html %}
+    {% case page.url %}
+      {% when "/" %}
+        {% include header-home.html %}
+      {% when "/about/" or "/publications/" or "/posts/" %}
+        {% include header-page.html %}
+      {% else %}
+        {% include header-post.html %}
+    {% endcase %}
+</header>

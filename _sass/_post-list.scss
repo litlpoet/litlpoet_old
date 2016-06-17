@@ -1,0 +1,55 @@
+$post-thumb-max-size: 500px;
+
+.post-list {
+    display:block;
+    margin: $space-small+$space-tiny 0 $space-small 0;
+    span {
+        color: $color-2;
+    }
+    .post-title-inline {
+        font-size: $font-size-2p0;
+        line-height: $line-height;
+        margin-right: $space-small;
+    }
+    .post-title {
+        display: inline-block;
+        font-size: $font-size-2p0;
+        line-height: $line-height;
+    }
+    .post-authors { display: block; }
+    span.author { display: inline-block; }
+    span.author-highlight {
+        display: inline-block;
+        font-weight: 500;
+        color: black;
+    }
+    .post-journals {
+        display: inline-block;
+        font-style: italic;
+    }
+    .post-files {
+        display: block;
+    }
+    .post-thumb {
+        margin: auto;
+        padding: $space-tiny;
+        width: 100%;
+        max-height: $post-thumb-max-size;
+        max-width: $post-thumb-max-size;
+        overflow: hidden;
+        img { border: 3px solid $color-1; }
+        img:hover { border: 3px solid $color-1-link; }
+    }
+    .post-round-thumb {
+        margin: auto;
+        width: 124px;
+        height: 124px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        background-position: center;
+        border: 3px solid $color-1;
+    }
+}
+
+

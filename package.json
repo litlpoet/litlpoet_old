@@ -1,0 +1,17 @@
+{
+  "name": "litlpoet",
+  "version": "1.0.0",
+  "description": "litlpoet's web-site based on Jekyll.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Byungkuk Choi",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
+    "lodash": "^4.11.1"
+  }
+}

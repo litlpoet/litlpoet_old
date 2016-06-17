@@ -1,0 +1,11 @@
+
+<article class="post-article">
+    <div class="post-info">
+        {% include /elem/pub-item-authors.html highlightname="Byungkuk Choi" pub=page %}
+        {% include /elem/pub-item-journal.html pub=page %}
+        <span> • {{ page.date | date: '%Y' }}</span>
+    </div>
+    <div class="post-content text-justify">
+        {{ content }}
+    </div>
+</article>

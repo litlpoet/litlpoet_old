@@ -1,0 +1,11 @@
+<footer>
+    {% case page.url %}
+    {% when "/" %}
+    {% include footer-home.html %}
+    {% when "/about/" or "/publications/" or "/posts/" %}
+    {% include footer-page.html %}
+    {% else %}
+    {% include footer-post.html %}
+    {% endcase %}
+    {% include footer-copyright.html %}
+</footer>

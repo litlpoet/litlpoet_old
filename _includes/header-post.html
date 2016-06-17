@@ -1,0 +1,19 @@
+{% assign url-tokens = page.url | split:"/" %}
+{% for tok in url-tokens %}
+{% case tok %}
+{% when "publications" %}
+{% assign classtype = "pub-teaser" %}
+{% assign teaser = page.teaser %}
+{% when "posts" %}
+{% assign classtype = "post-teaser" %}
+{% endcase %}
+{% endfor %}
+
+<div class="{{ classtype }}" {% if teaser %}style="background-image: url({{ teaser }});"{% endif %}>
+    <div class="row">
+        <div class="medium-10 medium-centered columns">
+            <h1>{{ page.title }}</h1>
+            <h5>{{ page.date | date: '%d %B, %Y' }}</h5>
+        </div>
+    </div>
+</div>

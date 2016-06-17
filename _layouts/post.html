@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% assign url-tokens = page.url | split:"/" %}
+{% for tok in url-tokens %}
+{% case tok %}
+{% when "publications" %}
+{% assign incfile = "body-article-pub.html" %}
+{% when "posts" %}
+{% assign incfile = "body-article-post.html" %}
+{% endcase %}
+{% endfor %}
+
+<div class="row">
+    <div class="medium-10 medium-centered columns">
+        {% include {{ incfile }} %}
+    </div>
+</div>

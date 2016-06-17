@@ -1,0 +1,36 @@
+{% assign url-tokens = page.url | split:"/" %}
+{% for tok in url-tokens %}
+{% case tok %}
+{% when "publications" %}
+{% assign listname = "Publications" %}
+{% assign listlink = "/publications/" %}
+{% assign classtype = "pub-footer" %}
+{% when "posts" %}
+{% assign listname = "Posts" %}
+{% assign listlink = "/posts/" %}
+{% assign classtype = "post-footer" %}
+{% endcase %}
+{% endfor %}
+
+{% assign pubs = site.publications | reverse %}
+{% for link in pubs %}
+{% if link.title == page.title %}
+{% unless forloop.last %}
+{% assign next = pubs[forloop.index] %}
+{% endunless %}
+{% unless forloop.first %}
+{% assign prev = prev_temp %}
+{% endunless %}
+{% endif %}
+{% assign prev_temp = link %}
+{% endfor %}
+
+<div class="{{ classtype }}">
+    <div class="row">
+        <div class="medium-10 medium-centered columns">
+            {% include /elem/pub-item-pagination.html item=prev dir="prev" %}
+            {% include /elem/pub-item-pagination.html item=next dir="next" %}
+        </div>
+    </div>
+    {% include /elem/back-to-list.html name=listname link=listlink %}
+</div>

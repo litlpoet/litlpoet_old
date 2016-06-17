@@ -1,0 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Byungkuk Choi
+email: litlpoet@gmail.com
+description: "Byungkuk Choi's research blog."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://litlpoet.github.io" # the base hostname & protocol for your site
+twitter_username: litlpoet
+github_username:  litlpoet
+
+# Collections
+collections:
+  publications:
+    output: true
+
+# Build settings
+exclude: [node_modules, gulpfile.js, package.json]
+markdown: kramdown 
+kramdown:
+  input: GFM
+paginate: 4
+paginate_path: "/posts/page:num/"
+gems: [jekyll-paginate]
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /posts/:path/
+  -
+    scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "post"
+      permalink: /publications/:path/

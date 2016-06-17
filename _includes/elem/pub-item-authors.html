@@ -1,0 +1,10 @@
+{% assign highlightname=include.highlightname %}
+{% assign pub=include.pub %}
+
+<span class="post-authors">
+    {% for author in pub.authors %}
+    {% if author == highlightname %}<span class="author-highlight">{{ author }}</span>{% if forloop.last == false %},{% endif %}
+    {% else %}<span class="author">{{ author }}</span>{% if forloop.last == false %},{% endif %}
+    {% endif %}
+    {% endfor %}
+</span>
