@@ -1,4 +1,4 @@
-<div class="row post-list debug">
+<div class="row post-list">
     <div class="large-3 columns">
         <div align="center" class="post-thumb">
             <a href="{{ pub.url | prepend: site.baseurl }}">
@@ -12,8 +12,12 @@
         {% include /elem/pub-item-journal.html pub=pub %}
         <span> • {{ pub.date | date: '%Y' }}</span>
         <span class="post-files">
-            {% include icon/pdf.html %}
-            {% include icon/video.html %}
+            {% if pub.pdf %}
+            {% include /icon/pdf.html url=pub.pdf %}
+            {% endif %}
+            {% if pub.video %}
+            {% include /icon/video.html url=pub.video %}
+            {% endif %}
         </span>
     </div>
 </div>

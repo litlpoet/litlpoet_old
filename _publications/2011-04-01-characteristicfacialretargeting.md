@@ -7,6 +7,8 @@ journal: "Computer Animation and Virtual World"
 journal_vol: "22(2-3): 187-194"
 thumb: "thumb.png"
 teaser: "teaser.jpg"
+pdf: "2011-04-01-characteristicfacialretargeting.pdf"
+video: "2011-04-01-characteristicfacialretargeting.wmv"
 ---
 
 ## Abstract

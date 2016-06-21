@@ -6,6 +6,8 @@ conference: "SIGGRAPH"
 journal: "ACM Transaction on Graphics"
 thumb: "thumb.jpg"
 teaser: "thumb.jpg"
+pdf: "2013-09-01-flappingflight.pdf"
+video: "2013-09-01-flappingflight.mp4"
 ---
 
 ## Abstract

@@ -1,6 +1,6 @@
-<div class="row post-list debug">
+<div class="row post-list">
     {% if post.thumb %}
-    <div class="large-10 columns debug">
+    <div class="large-10 columns">
         <a class="post-title-inline" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <span>{{ post.date | date: '%B %d, %Y' }}</span>
         <p>{{ post.content | truncatewords: 42 }}</p>
@@ -11,7 +11,7 @@
         </a>
     </div>
     {% else %}
-    <div class="large-12 columns debug">
+    <div class="large-12 columns">
         <a class="post-title-inline" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <span> {{ post.date | date: '%B %d, %Y' }}</span>
         <p>{{ post.content | truncatewords: 42 }}</p>

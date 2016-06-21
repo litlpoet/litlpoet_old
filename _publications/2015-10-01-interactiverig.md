@@ -6,6 +6,8 @@ conference: "Pacific Graphics"
 journal: "Computer Graphics Forum"
 thumb: "thumb.jpg"
 teaser: "teaser.jpg"
+pdf: "2015-10-01-interactiverig.pdf"
+video: "2015-10-01-interactiverig.avi"
 ---
 
 ## Abstract

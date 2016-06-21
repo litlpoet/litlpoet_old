@@ -6,6 +6,8 @@ conference: "SIGGRAPH"
 journal: "ACM Transaction on Graphics"
 thumb: "thumb.png"
 teaser: "teaser.jpg"
+pdf: "2012-04-01-spacetimeexpressioncloning.pdf"
+video: "2012-04-01-spacetimeexpressioncloning.avi"
 ---
 
 ## Abstract

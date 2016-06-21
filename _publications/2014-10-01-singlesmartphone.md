@@ -7,6 +7,8 @@ journal: "Computer Graphics Forum"
 journal_vol: "33(7)"
 thumb: "thumb.png"
 teaser: "teaser.png"
+pdf: "2014-10-01-singlesmartphone.pdf"
+video: "2014-10-01-singlesmartphone.avi"
 ---
 
 ## Abstract

@@ -6,6 +6,8 @@ conference: "SIGGRAPH"
 journal: "ACM Transaction on Graphics"
 thumb: "thumb.png"
 teaser: "teaser.png"
+pdf: "2016-04-21-sketchimo.pdf"
+video: "2016-04-21-sketchimo.avi"
 ---
 
 ## Abstract

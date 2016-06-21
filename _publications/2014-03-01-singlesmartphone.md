@@ -5,6 +5,7 @@ authors: ["Haegwang Eom", "Byungkuk Choi", "Junyong Noh"]
 conference: "Computer Graphics International, Short Paper"
 thumb: "thumb.png"
 teaser: "teaser.png"
+pdf: "2014-03-01-singlesmartphone.pdf"
 ---
 
 ## Abstract
